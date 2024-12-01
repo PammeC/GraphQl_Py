@@ -27,61 +27,13 @@ pip install graphene
 
 2. Clone the repository and navigate to the project directory:
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/PammeC/GraphQl_Py
+cd GraphGl_Py
 ```
 
 ## 🚀Usage
 
 Run the script:
 ```bash
-python books.py
+python REST-API.py
 ```
-
-### Example Queries
-
-Fetch all books:
-```graphql
-{
-    allBooks {
-        title
-        author
-    }
-}
-```
-
-Find a specific book by title:
-```graphql
-{
-    bookByTitle(title: "Cien Años de Soledad") {
-        title
-        author
-    }
-}
-```
-
-## 📂 Project Structure
-
-- `Book` class: Defines the GraphQL Object Type for books with title and author fields
-- `Query` class: Contains the GraphQL query definitions
-- Sample data: Includes two classic Spanish literature books
-
-## Schema Details
-
-### Types
-
-```graphql
-type Book {
-    title: String
-    author: String
-}
-```
-
-### Queries
-
-- `allBooks`: Returns a list of all books
-- `bookByTitle(title: String!)`: Returns a specific book matching the provided title
-
-## Dependencies
-
-- graphene: GraphQL framework for Python
